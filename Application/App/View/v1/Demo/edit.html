@@ -1,0 +1,157 @@
+<extend name="ParentView/index"/>
+<block name="title"></block>
+<block name="css"> 
+
+</block>
+<block name="body_style">style="background:#ecf0f5"</block>
+<block name="body">
+    <section class="content">
+        <div class="box box-solid">
+            <div class="box-header with-border">
+                <i class="fa fa-text-width"></i>
+                <h3 class="box-title">表单示例</h3>
+            </div>
+            <div class='box-body'>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Inupt</label>
+                        <div class="col-sm-4">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Short Input</label>
+                        <div class="col-sm-3">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">long Inupt</label>
+                        <div class="col-sm-7">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">复选框</label>
+                        <div class="col-sm-7">
+                            <label>
+                                <input class="minimal" type="checkbox" value=""> 苹果
+                            </label>
+                            <label>
+                                <input class="minimal" type="checkbox" value=""> 香蕉
+                            </label>
+                            <label>
+                                <input class="minimal" type="checkbox" value=""> 火龙果
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">单选框</label>
+                        <div class="col-sm-7">
+                            <label>
+                                <input class="minimal" type="radio" value=""> 老虎
+                            </label>
+                            <label>
+                                <input class="minimal" type="radio" value="" checked> 大象
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">select</label>
+                        <div class="col-sm-7">
+                            <select class="form-control w200">
+                                <option>添加1</option>
+                                <option>添加1</option>
+                                <option>添加1</option>
+                                <option>添加1</option>
+                                <option>添加1</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">关联选择</label>
+                        <div class="col-sm-1">
+                            <select class="form-control">
+                                <option>添加1</option>
+                                <option>添加1</option>
+                                <option>添加1</option>
+                                <option>添加1</option>
+                                <option>添加1</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-1">
+                            <select class="form-control">
+                                <option>添加1</option>
+                                <option>添加1</option>
+                                <option>添加1</option>
+                                <option>添加1</option>
+                                <option>添加1</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-1">
+                            <select class="form-control">
+                                <option>添加1</option>
+                                <option>添加1</option>
+                                <option>添加1</option>
+                                <option>添加1</option>
+                                <option>添加1</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">日期控件</label>
+                        <div class="col-sm-3">
+                            <div class="input-group date">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <input type="text" class="form-control pull-right" id="datepicker">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">文本域</label>
+                        <div class="col-sm-4">
+                            <textarea class="form-control pull-right" rows="3" cols="20"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label"></label>
+                        <div class="col-sm-4">
+                            <a class="btn btn-info mr15">
+                                <i class="fa fa-plus"></i> 添加
+                            </a>
+                            <a class="btn btn-primary mr15">
+                                <i class="fa fa-pencil"></i> 编辑
+                            </a>
+                            <a class="btn btn-danger mr15">
+                                <i class="fa fa-trash-o"></i> 删除
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</block>
+<block name="js">
+    <link rel="stylesheet" href="__APP__/plugins/iCheck/all.css"/>
+    <script src="__APP__/plugins/iCheck/icheck.min.js"></script>
+    <link rel="stylesheet" href="__APP__/plugins/datepicker/datepicker3.css">
+    <script src="__APP__/plugins/datepicker/bootstrap-datepicker.js"></script>
+    <script>
+        $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+            checkboxClass: 'icheckbox_minimal-blue',
+            radioClass: 'iradio_minimal-blue'
+        });
+
+        $('#datepicker').datepicker({
+            "autoclose": true
+        });
+    </script>
+</block>

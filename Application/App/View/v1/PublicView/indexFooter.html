@@ -1,0 +1,17 @@
+<script src="__APP__/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="__APP__/bootstrap/js/bootstrap.min.js"></script>
+<script src="__APP__/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="__APP__/plugins/fastclick/fastclick.js"></script>
+<script src="__APP__/dist/js/app.min.js"></script>
+<script type="text/javascript">
+    //导入服务端语言包，为JS多语言服务
+    $.lang = JSON.parse('{:json_encode(getLangListByRule())}');
+</script>
+
+<link rel="stylesheet" href="__APP__/plugins/artDialog/4.1.7/css/artDialog.css" type="text/css" />
+<script type="text/javascript" src="__APP__/plugins/artDialog/4.1.7/js/artDialog.min.js"></script>
+<script type="text/javascript" src="__APP__/js/base.js"></script>
+
+<block name="js_file"></block>
+<block name="js"></block>
+
